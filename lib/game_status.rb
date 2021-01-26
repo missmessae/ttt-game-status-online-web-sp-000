@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [6,4,2]   #Diagonal BL-TR
 ]
 
-def won?(board)  
+def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
       index_0 = win_combo[0]
       index_1 = win_combo[1]
