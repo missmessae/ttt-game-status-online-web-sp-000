@@ -20,6 +20,6 @@ def won?(board)
     winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
   end
   WIN_COMBINATIONS.select do |winner|
-    winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
+    winner.is_a?(["X", "X", "X"]) || winner.is_a?(["O", "O", "O"])
   end
 end
