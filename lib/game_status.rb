@@ -17,6 +17,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |winner|
-    winner.any? == [X,X,X] || winner.any? == [O,O,O]
+    winner.any? == ["X", "X", "X"] || winner.any? == ["O", "O", "O"]
     end
 end
