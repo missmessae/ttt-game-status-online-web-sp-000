@@ -29,11 +29,3 @@ def won?(board)
            return win_combo
      else
            return false
-
-  WIN_COMBINATIONS.select do |winner|
-    if winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
-    else
-      return false
-end
-end
-end
