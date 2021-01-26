@@ -22,4 +22,6 @@ def won?(board)
     else WIN_COMBINATIONS.select do |winner|
     winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
     end
+  end
+end
 end
