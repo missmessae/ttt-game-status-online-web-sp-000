@@ -65,4 +65,5 @@ def winner?(board)
     return nil
   elsif won?(board) == true
     return position_1
+  end
 end
