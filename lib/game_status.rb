@@ -19,6 +19,8 @@ def won?(board)
   WIN_COMBINATIONS.any? do |winner|
     winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
   WIN_COMBINATIONS.select do |winner|
-    winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
+    if winner == ["X", "X", "X"] || winner == ["O", "O", "O"]
+      return winner
   end
+end
 end
