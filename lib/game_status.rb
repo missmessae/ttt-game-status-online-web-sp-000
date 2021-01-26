@@ -34,6 +34,21 @@ def won?(board)
   return false
 end
 
+
 def full?(board)
   !board.include?(" ")
+end
+
+
+def draw?(board)
+  if won?(board) == false && full?(board) == true
+    return true
+  elsif won?(board) == false && full?(board) == false
+    return false
+  elsif won?(board) == true && full?(board) == true
+    return false
+  elsif won?(board) == true && full?(board) == false
+    return false
+    
+    
 end
